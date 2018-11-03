@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<widget xmlns       = "http://www.w3.org/ns/widgets"
+        xmlns:gap   = "http://phonegap.com/ns/1.0"
+        id          = "de.deinetubenews.deinetubenews"
+        versionCode = ""
+        version     = "1.0.0" >
+
+	<name>DeineTubeNews</name>
+
+	<description>Deine App, die dich t&#228;glich &#252;ber das Wichtigste aus YoutubeDeutschland auf dem Laufenden h&#228;lt.</description>
+
+	<author href="http://www.deinetubenews.de" email="info@deinetubenews.de">DTN</author>
+
+	<gap:platform name="android" />
+	
+	<!-- General preferences -->
+	<preference name="android-targetSdkVersion" value="26" />
+	<preference name="buildArchitecture" value="arm" />
+	<preference name="android-build-tool" value="gradle" />
+	<preference name="permissions" value="none"/>
+
+	<preference name="disallowOverscroll" value="true" />
+	<preference name="webviewbounce" value="false" />
+
+	<!-- Custom preferences -->
+
+	<!-- PhoneGap plugin declaration -->
+	<plugin name="cordova-plugin-inappbrowser" source="npm" />
+	<plugin name="cordova-plugin-network-information" source="npm" />
+	<plugin name="cordova-plugin-whitelist" source="npm" />
+	<plugin name="cordova-plugin-splashscreen" source="npm" />
+	<plugin name="cordova-plugin-device" source="npm" />
+	<plugin name="cordova-plugin-statusbar" source="npm" />
+	<plugin name="cordova-build-architecture" spec="https://github.com/MBuchalik/cordova-build-architecture.git#v1.0.1" source="git" />
+
+	<!-- Whitelist policy  -->
+	<access origin="*" />
+	<allow-intent href="*" />
+	<allow-navigation href="*" />
+
+	<!-- SplashScreen configuration -->
+	<preference name="SplashScreen" value="splash" />
+	<preference name="SplashScreenDelay" value="10000" />
+	<preference name="FadeSplashScreenDuration" value="300" />
+	<preference name="ShowSplashScreenSpinner" value="false" />
+
+	<!-- Icons and Splashscreens declaration -->
+
+	<icon src="./themes/DTN-Theme-Android/icons/icon-dtn.png" />
+	<icon src="./themes/DTN-Theme-Android/icons/icon-dtn-ldpi.png" gap:platform="android" gap:qualifier="ldpi" />
+	<icon src="./themes/DTN-Theme-Android/icons/icon-dtn-mdpi.png" gap:platform="android" gap:qualifier="mdpi" />
+	<icon src="./themes/DTN-Theme-Android/icons/icon-dtn-hdpi.png" gap:platform="android" gap:qualifier="hdpi" />
+	<icon src="./themes/DTN-Theme-Android/icons/icon-dtn-xhdpi.png" gap:platform="android" gap:qualifier="xhdpi" />
+	<icon src="./themes/DTN-Theme-Android/icons/icon-dtn-xxhdpi.png" gap:platform="android" gap:qualifier="xxhdpi" />
+	<icon src="./themes/DTN-Theme-Android/icons/icon-dtn-xxxhdpi.png" gap:platform="android" gap:qualifier="xxxhdpi" />
+	
+	<gap:splash src="./themes/DTN-Theme-Android/splashscreens/splashscreen-dtn.9.png" />
+	<gap:splash src="./themes/DTN-Theme-Android/splashscreens/splashscreen-dtn-ldpi.9.png" gap:platform="android" gap:qualifier="ldpi" />
+	<gap:splash src="./themes/DTN-Theme-Android/splashscreens/splashscreen-dtn-mdpi.9.png" gap:platform="android" gap:qualifier="mdpi" />
+	<gap:splash src="./themes/DTN-Theme-Android/splashscreens/splashscreen-dtn-hdpi.9.png" gap:platform="android" gap:qualifier="hdpi" />
+	<gap:splash src="./themes/DTN-Theme-Android/splashscreens/splashscreen-dtn-xhdpi.9.png" gap:platform="android" gap:qualifier="xhdpi" />
+	<gap:splash src="./themes/DTN-Theme-Android/splashscreens/splashscreen-dtn-xxhdpi.9.png" gap:platform="android" gap:qualifier="xxhdpi" />
+	<gap:splash src="./themes/DTN-Theme-Android/splashscreens/splashscreen-dtn-xxxhdpi.9.png" gap:platform="android" gap:qualifier="xxxhdpi" />
+</widget>
